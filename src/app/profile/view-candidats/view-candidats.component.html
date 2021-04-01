@@ -1,0 +1,100 @@
+<!-- End
+    
+<div *ngFor="let candidat of candidats">
+        <div>{{candidat?.name}}</div>
+        
+</div>
+Footer -->
+
+<section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                        <h2>vous aveez recu ces candidatures</h2>
+                </div>
+
+                <div *ngFor="let candidat of candidats; let index=index" class="row">
+
+                        <div class="col-lg-6">
+                                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+
+                                        <div  class="member-info">
+                                                <h4>{{candidat?.name}}</h4>
+                                                <span>{{candidat?.email}}</span>
+                                                <p>{{candidat?.mission}}</p>
+                                        </div>
+                                </div>
+                        </div>
+
+                        
+
+                </div>
+
+        </div>
+</section>
+
+<footer id="footer">
+
+
+
+        <div class="footer-top">
+                <div class="container">
+                        <div class="row">
+
+                                <div class="col-lg-3 col-md-6 footer-contact">
+                                        <h3>HOMSYS</h3>
+                                        <p>
+                                                Rabat <br>
+                                                Agdal<br>
+                                                Morocco<br><br>
+                                                <strong>Phone:</strong> xxxxxx<br>
+                                                <strong>Email:</strong> xxxx@example.com<br>
+                                        </p>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 footer-links">
+                                        <h4>Useful Links</h4>
+                                        <ul>
+                                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                                                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                                                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a>
+                                                </li>
+                                                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a>
+                                                </li>
+                                        </ul>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 footer-links">
+                                        <h4>Candidats</h4>
+                                        <ul>
+                                                <li><i class="bx bx-chevron-right"></i> <a href="#team">Consulter les
+                                                                offres</a></li>
+                                                <li><i class="bx bx-chevron-right"></i> <a href="/profile">Mon
+                                                                profil</a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 footer-links">
+                                        <h4>Our Social Networks</h4>
+                                        <p>suivez nous sur les reseaux sociaux pour consulter les derniers offres</p>
+                                        <div class="social-links mt-3">
+                                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                        </div>
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+                <div class="copyright">
+                        &copy; Copyright <strong><span>HOMSYS</span></strong>. All Rights Reserved
+                </div>
+
+        </div>
+</footer>

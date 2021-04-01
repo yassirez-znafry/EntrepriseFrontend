@@ -1,0 +1,195 @@
+
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                data-aos="fade-up" data-aos-delay="200">
+                <h1>Viser plus haut. Allez plus loin. Rêver plus grand</h1>
+                <h2>Une meilleure carrière est quelque part. Nous vous aiderons pour la décrocher</h2>
+                <div class="d-lg-flex">
+                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= Cliens Section ======= -->
+    <section id="cliens" class="cliens section-bg">
+        <div class="container">
+
+            <div class="row" data-aos="zoom-in">
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/clients/client-1.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/clients/client-5.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Cliens Section -->
+    
+
+    <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+                <h2>Offres</h2>
+            </div>
+    
+            <div *ngFor="let offer of offers$; let index=index" class="row">
+    
+                <div class="col-lg-6">
+                    <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+    
+                        <div (click)="see(offers$[index].id)" class="member-info">
+                            <h4>{{offers$[index]?.title}}</h4>
+                            <span>{{offers$[index]?.type}}</span>
+                            <p>{{offers$[index]?.mission}}</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div (click)="see(offers$[index+1].id)" class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="member-info">
+                            <h4>{{offers$[index+1]?.title}}</h4>
+                            <span>{{offers$[index+1]?.type}}</span>
+                            <p>{{offers$[index+1]?.mission}}</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+        </div>
+    </section>
+
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>A propos de nous</h2>
+        </div>
+
+        <div class="row content">
+            <div class="col-lg-6">
+                <p>
+                    HOMSYS est une société de formation et de conseil en placement des ressources.
+                </p>
+                <ul>
+                    <li><i class="ri-check-double-line"></i> Nous nous adressons aux entreprises ayant besoins de
+                        ressources qualifiées et opérationnelles immédiatement.</li>
+                    <li><i class="ri-check-double-line"></i> Nous prenons en charge le filtrage, la sélection et
+                        l’évaluation des profils répondant à vos besoins et exigences.</li>
+                    <li><i class="ri-check-double-line"></i> HOMSYS vous offre une gamme complète de solutions de
+                        recrutement personnalisée en plus d’une expertise et l’attention que vous méritez.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                <h3> <strong>LE RECRUTEMENT !! C'EST NOTRE PASSION !!</strong> Ce que nous distinque par rapport aux
+                    autres</h3>
+                <a href="/login" class="btn-learn-more">Login</a>
+                <a href="/sign-up" class="btn-learn-more">Register</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+</main>
+<footer id="footer">
+
+
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>HOMSYS</h3>
+                    <p>
+                        Rabat <br>
+                        Agdal<br>
+                        Morocco<br><br>
+                        <strong>Phone:</strong> xxxxxx<br>
+                        <strong>Email:</strong> xxxx@example.com<br>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Candidats</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#team">Consulter les offres</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="/profile">Mon profil</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Social Networks</h4>
+                    <p>suivez nous sur les reseaux sociaux pour consulter les derniers offres</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+        <div class="copyright">
+            &copy; Copyright <strong><span>HOMSYS</span></strong>. All Rights Reserved
+        </div>
+
+    </div>
+</footer><!-- End Footer -->

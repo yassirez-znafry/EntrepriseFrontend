@@ -1,0 +1,75 @@
+<br>
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <hr />
+        <div class="create-post-container col-md-9">
+            <form class="post-form" [formGroup]="postuler" (ngSubmit)="postulerNow()">
+                <h4>Postuler à l'offre : {{offer?.title}} </h4>
+                <div class="form-group">
+                    <hr />
+                    <input type="text" [formControlName]="'name'" class="form-control" style="margin-top: 5px"
+                        placeholder="name">
+                    <input type="text" class="form-control" [formControlName]="'email'" style="margin-top: 5px"
+                        placeholder="email">
+                    <input type="text" class="form-control" [formControlName]="'tele'" style="margin-top: 5px"
+                        placeholder="tele">
+                    <input type="text" class="form-control" [formControlName]="'tarif'" style="margin-top: 5px"
+                        placeholder="tarif">
+                    <input type="text" class="form-control" [formControlName]="'disponibilite'" style="margin-top: 5px"
+                        placeholder="disponibilite">
+
+                    <label class="hah">
+                        CV
+                        <input type="file" (change)="selectFile($event)" />
+                    </label>
+                    
+                    <span>
+                        <div style="margin-top: 5px" class="float-right">
+                            <button class="btnCreatePost">postuler</button>
+                            <button (click)="discardPostulation()" class="btnDiscard">Discard</button>
+                        </div>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--
+    <div *ngIf="currentFile" class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+            attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{ width: progress + '%' }">
+            {{ progress }}%
+        </div>
+    </div>
+    
+    
+    
+    <button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">
+        Upload
+    </button>
+
+    
+    <div class="alert alert-light" role="alert">{{ message }}</div>
+    
+    <div class="card">
+        <div class="card-header">List of Files</div>
+        <ul class="list-group list-group-flush" *ngFor="let file of fileInfos | async">
+            <li class="list-group-item">
+                <a href="{{ file.url }}"  (click)="seeCv(file.url)">{{ file.name }}</a>
+            </li>
+        </ul>
+    </div>
+    -->
+</div>

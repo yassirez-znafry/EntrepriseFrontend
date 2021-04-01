@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body>
+    <div class="panel panel-info">
+        <div class="panel-heading" ><p class="hio">{{offer?.title}}</p></div>
+        <div class="panel-body">
+            <div class="dav" >Profil:</div>
+            <p >{{offer?.profil}}</p>
+            <div class="dav" >competances demandées:</div>
+            <p >{{offer?.competance}}</p>
+            <div class="dav" >Qualités personnelles demandées:</div>
+            <p >{{offer?.qualities}}</p>
+            <div><button type="button" class="btn btn-success btn-lg" (click)="postuler(offer.id)">Postuler</button></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

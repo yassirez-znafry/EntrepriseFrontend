@@ -1,0 +1,44 @@
+<br>
+<br>
+<br>
+
+<section>
+
+
+    <div class="container">
+    <div class="row">
+        <hr />
+        <div class="create-post-container col-md-9">
+            <form class="post-form" [formGroup]="createOfferForm" (ngSubmit)="createOffer()">
+                <div class="form-group">
+                    <div class="create-post-heading">Create Offer</div>
+                    <hr />
+
+
+
+                    <input type="text" [formControlName]="'title'" class="form-control" style="margin-top: 5px"
+                        placeholder="Title">
+                    <input type="text" class="form-control" [formControlName]="'profil'" style="margin-top: 5px"
+                        placeholder="Profil">
+                    <input type="text" class="form-control" [formControlName]="'mission'" style="margin-top: 5px"
+                        placeholder="Mission">
+                    <input type="text" class="form-control" [formControlName]="'qualities'" style="margin-top: 5px"
+                        placeholder="Qualities">
+                    <input type="text" class="form-control" [formControlName]="'competance'" style="margin-top: 5px"
+                        placeholder="Competances">
+                    
+                    <input type="text" class="form-control" [formControlName]="'type'" style="margin-top: 5px"
+                        placeholder="Type contract">
+                    
+                    <span>
+                        <div style="margin-top: 5px" class="float-right">
+                            <button (click)="discardOffer()" class="btnDiscard">Discard</button>
+                            <button class="btnCreatePost">Offer</button>
+                        </div>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
